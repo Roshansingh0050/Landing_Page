@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task-1 : Landing Page</title>
+	<style type="text/css">
+
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		header{
+			width: 100%;
+			height: 100vh;
+			background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) ,url('image.jpg');
+			background-size: cover;
+			font-family: sans-serif;
+
+		}
+
+		nav{
+			width: 100%;
+			height: 100px;
+			color: whitesmoke;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.logo{
+			font-size: 2em;
+		}
+
+		.menu a{
+			text-decoration: none;
+			color: whitesmoke;
+			padding: 10px 20px;
+			font-size: 20px;
+			position: relative;
+		}
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			border-bottom: 2px solid indianred;
+			transition: 0.4s;
+
+		}
+        .menu a:hover:before{
+        	width: 90%;
+
+        }
+		
+
+		.register a{
+			text-decoration: none;
+			color: whitesmoke;
+			padding: 10px 20px;
+			font-size: 20px;
+			background-color: indianred;
+			border-radius: 20px;
+			transition: 0.4s;
+		}
+		.register a:hover{
+			background: transparent;
+			border: 1px solid indianred;
+		}
+
+		.middle{
+			color: white;
+			max-width: 650px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+		}
+		.middle span{
+			letter-spacing: 5px;
+		}
+		.middle h1{
+			font-size: 3.5em;
+		}
+		.middle a{
+			text-decoration: none;
+			color: white;
+			background: indianred;
+			padding: 10px 20px;
+			letter-spacing: 5px;
+			transition: 0.2s;
+
+		}
+		.middle a:hover{
+			background: transparent;
+			border: 1px solid indianred;
+		}
+		
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+		<nav>
+		<!-- logo -->
+		<div class="logo">Task-1 : Landing Page</div>
+		<!-- Menus -->
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contents</a>
+			<a href="#">E-mail</a>
+		</div>
+		<!-- register button -->
+		<div class="register">
+			<a href="#">Register</a>
+		</div>
+		</nav>
+
+
+		<!-- middle content -->
+		<section class="middle">
+			<span>WELCOME</span>
+
+			<h1>Roshan Arts Gallery</h1>
+			<br>
+			<a href="#">Book Your Sketch Now!</a>
+		</section>
+		
+	</header>
+</body>
+</html>
